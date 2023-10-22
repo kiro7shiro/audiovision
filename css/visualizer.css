@@ -1,0 +1,5 @@
+.visualizer {
+    cursor: move;
+    position: absolute;
+    z-index: 100000;
+}
