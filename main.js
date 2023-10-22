@@ -65,15 +65,15 @@ port.onMessage.addListener(function (message) {
 port.postMessage({ name: 'main', command: 'recievers' })
 
 // setup
-/* const app = new Application()
+const app = new Application()
 const analyser1 = app.sound.createAnalyser({ fftSize: 256 })
 const waveform1 = new Visualizer.Waveform(analyser1, new Color(0, 0, 0), 2)
-const bars1 = new Visualizer.Bars(analyser1, { sampleRate: app.sound.context.sampleRate }) */
+//const bars1 = new Visualizer.Bars(analyser1, { sampleRate: app.sound.context.sampleRate })
 //const visualizerPort1 = new Visualizer.Port(port, analyser1)
-//const visualizer1 = new Visualizer(512, 256, '25px', '25px')
 
+const visualizer1 = new Visualizer(512, 256, '25px', '25px')
 //visualizer1.add(bars1)
-//visualizer1.add(waveform1)
+visualizer1.add(waveform1)
 //visualizer1.add(visualizerPort1)
-//app.visualizers.push(visualizer1)
+app.visualizers.push(visualizer1)
 
