@@ -1,5 +1,3 @@
-console.log('browser actions!')
-
 const recieversList = document.getElementById('recieversList')
 
 const port = browser.runtime.connect({ name: 'actions' })
@@ -20,4 +18,4 @@ port.onMessage.addListener(function (message) {
             break
     }
 })
-port.postMessage({ name: 'actions', command: 'recievers' })
+port.postMessage({ name: 'browserAction', command: 'recievers' })

@@ -13,7 +13,7 @@
         {
             "matches": ["*://*.youtube.com/watch*"],
             "js": ["src/Timer.js", "src/Color.js", "src/Screen.js", "src/Controls.js", "src/Visualizer.js", "src/Sound.js", "src/Video.js", "main.js"],
-            "css": ["css/w3.css", "css/google-fonts.css", "css/font-awesome.min.css", "css/visualizer.css"]
+            "css": ["css/visualizer.css"]
         }
     ],
     "browser_action": {
@@ -21,18 +21,18 @@
         "default_icon": {
             "64": "icons/icon.png"
         },
-        "default_popup": "browserAction/actions.html",
-        "default_title": "Audiovision"
+        "default_popup": "browserAction/browserAction.html",
+        "default_title": "audiovision"
     },
     "page_action": {
         "default_icon": {
             "64": "icons/icon.png"
         },
-        "default_popup": "pageAction/index.html",
-        "default_title": "Audiovision"
+        "default_popup": "pageAction/pageAction.html",
+        "default_title": "audiovision"
     },
     "options_ui": {
-        "page": "options/index.html"
+        "page": "options/options.html"
     },
     "permissions": ["http://localhost/*"]
 }

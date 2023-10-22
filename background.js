@@ -1,5 +1,7 @@
 //const socket = io('ws://localhost:3000', { query: { name: 'firefox', type: 'source' } })
 
+console.log('background')
+
 const ports = {}
 
 // handle messages
